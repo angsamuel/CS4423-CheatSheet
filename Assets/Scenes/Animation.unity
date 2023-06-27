@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &115305234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1848255834925038664, guid: 97b05f95f2306ff42be0eea35fee1e32, type: 3}
+  m_PrefabInstance: {fileID: 1848255834597883390}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &780726010
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,10 +234,43 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1848255834925038660, guid: 97b05f95f2306ff42be0eea35fee1e32, type: 3}
   m_PrefabInstance: {fileID: 1848255834597883390}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 115305234}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c02dfe88a2e03cf4ea6bae791e67df5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &897581502
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115305234}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f3d8dc8456249848aaee761cc57e259, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &897581503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115305234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1816a2c4d8faf634f96e6fbe64d2a5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1343375920
@@ -244,7 +282,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8827880443444605254, guid: 08b6db7bea96a72409cb8afd7176e62b, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8827880443444605272, guid: 08b6db7bea96a72409cb8afd7176e62b, type: 3}
       propertyPath: m_Pivot.x
@@ -477,6 +515,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1848255834925038662, guid: 97b05f95f2306ff42be0eea35fee1e32, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1642372445, guid: 5411f0fb8efef6c4d9c04a906bbc7059, type: 3}
+    - target: {fileID: 1848255834925038662, guid: 97b05f95f2306ff42be0eea35fee1e32, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848255834925038662, guid: 97b05f95f2306ff42be0eea35fee1e32, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848255834925038662, guid: 97b05f95f2306ff42be0eea35fee1e32, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1848255834925038663, guid: 97b05f95f2306ff42be0eea35fee1e32, type: 3}
       propertyPath: m_RootOrder
       value: 1
