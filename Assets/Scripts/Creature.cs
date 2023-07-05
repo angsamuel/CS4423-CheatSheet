@@ -46,6 +46,14 @@ public class Creature : MonoBehaviour
         }
     }
 
+    public void Stop(){
+        Move(Vector3.zero);
+    }
+
+    public void MoveToward(Vector3 pos){
+        Move((pos - transform.position).normalized);
+    }
+
     public void RandomizeColor(){
        sr.color = Color.HSVToRGB(Random.Range(0f,1f),1,1);
     }
