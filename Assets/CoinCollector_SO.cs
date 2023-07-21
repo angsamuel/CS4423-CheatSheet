@@ -14,6 +14,7 @@ public class CoinCollector_SO : MonoBehaviour
     {
         if(other.tag == "Coin"){
             creatureSO.money += 1;
+            other.GetComponent<MakeSound>().PlaySound();
             Destroy(other.gameObject);
         }
     }

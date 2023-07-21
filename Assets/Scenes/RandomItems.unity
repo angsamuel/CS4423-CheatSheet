@@ -304,6 +304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wand (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7017958169147600755, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7850833198688181062, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
       propertyPath: randomizeSeed
       value: 1
@@ -376,6 +380,10 @@ PrefabInstance:
     - target: {fileID: 7017958169147600755, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
       propertyPath: m_Name
       value: Wand (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017958169147600755, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7850833198688181062, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
       propertyPath: randomizeSeed
@@ -450,6 +458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wand (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7017958169147600755, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7850833198688181062, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
       propertyPath: randomizeSeed
       value: 1
@@ -522,6 +534,10 @@ PrefabInstance:
     - target: {fileID: 7017958169147600755, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
       propertyPath: m_Name
       value: Wand (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017958169147600755, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7850833198688181062, guid: 7689aeba8c189ce4bbb0db0bc398dd9d, type: 3}
       propertyPath: randomizeSeed

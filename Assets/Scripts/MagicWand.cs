@@ -56,6 +56,13 @@ public class MagicWand : MonoBehaviour
     //Components
     SpriteRenderer spriteRenderer;
 
+    List<GameObject> pool;
+    int poolMax = 10;
+
+    void Awake(){
+        pool = new List<GameObject>();
+    }
+
     void Start(){
         spriteRenderer = GetComponent<SpriteRenderer>();
         if(randomizeAttributes){
@@ -115,7 +122,16 @@ public class MagicWand : MonoBehaviour
         //projectile count
         for(int i = 0; i<projectiles; i++){
             //create projectile, apply the damage and speed
-            GameObject newProjectile = Instantiate(projectile,spawnPoint.position,Quaternion.identity);
+             GameObject newProjectile;
+            if(pool.Count >= poolMax){
+                newProjectile = pool[0];
+                newProjectile.transform.position = spawnPoint.position;
+                pool.RemoveAt(0);
+            }else{
+                newProjectile = Instantiate(projectile,spawnPoint.position,Quaternion.identity);
+            }
+
+            pool.Add(newProjectile);
 
             //apply the size
             newProjectile.transform.localScale = Vector3.one * projectileSize;
@@ -129,7 +145,7 @@ public class MagicWand : MonoBehaviour
             
             newProjectile.GetComponent<Rigidbody2D>().gravityScale = projectileGravity;
             //so we don't add up projectiles forever, destroy after 10 seconds
-            Destroy(newProjectile,10f);
+            //Destroy(newProjectile,10f);
         }  
     }
 
@@ -151,26 +167,6 @@ public class MagicWand : MonoBehaviour
 
 
 
-    // public void Generate(){
-    //     //set our seed
-    //     if(randomizeSeed){
-    //        seed = Random.Range(int.MinValue,int.MaxValue); 
-    //     }
-
-    //     Random.InitState(seed);
-        
-    //     //randomizeAttributes attributes
-    //     damage =  Random.Range(worstDamage,bestDamage);
-    //     projectileSpeed = Random.Range(worstSpeed,bestSpeed);
-    //     cooldown = Random.Range(worstCooldown,bestCooldown);
-    //     accuracy = Random.Range(worstAccuracy,bestAccuracy);
-    //     projectiles = (int)Random.Range(worstProjectiles,bestProjectiles);
-    //     projectileSize = Random.Range(worstProjectileSize,bestProjectileSize);
-
-    //     //let's randomizeAttributes our color too!
-    //     GetComponent<SpriteRenderer>().color = new Color(Random.Range(0f,1f),Random.Range(0f,1f),Random.Range(0f,1f));
-    
-    // }
 
 
 }
