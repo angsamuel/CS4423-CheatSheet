@@ -9,6 +9,7 @@ public class PlayerInputController : MonoBehaviour
     Vector3 moveDir = Vector3.zero;
     void FixedUpdate(){
         HandleMovement();
+        
     }
 
     void Update(){

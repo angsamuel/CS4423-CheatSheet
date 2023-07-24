@@ -61,4 +61,6 @@ public class Creature : MonoBehaviour
     void Jump(){
         animationStateChanger.ChangeAnimationState("Jump"); //
     }
+
+
 }
